@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>For You — A Love Letter</title>
+  <style>
+    :root{
+      --bg:#ffe6f0;
+      --card:#fff0f5;
+      --accent:#ff69b4;
+      --accent-light:#ffc1e3;
+      --text:#3a2b2f;
+      --muted:#6b5b5f;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:'Poppins', 'Segoe UI', sans-serif;
+      margin:0;
+      background:linear-gradient(135deg,var(--bg),#fff0f8);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      color:var(--text);
+    }
+    .card{
+      width:min(720px,90vw);
+      background:var(--card);
+      border-radius:20px;
+      padding:32px;
+      box-shadow:0 10px 40px rgba(255,105,180,0.2);
+      border:1px solid rgba(255,105,180,0.25);
+      position:relative;
+      overflow:hidden;
+    }
+    .card::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:url('https://www.transparenttextures.com/patterns/soft-wallpaper.png');
+      opacity:0.2;
+      z-index:0;
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      position:relative;
+      z-index:1;
+    }
+    .heart{
+      width:60px;
+      height:60px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:radial-gradient(circle at top left,var(--accent),#ff85c1);
+      color:white;
+      font-weight:700;
+      font-size:26px;
+      box-shadow:0 4px 14px rgba(255,105,180,0.4);
+      animation:pulse 2s infinite;
+    }
+    @keyframes pulse{
+      0%,100%{transform:scale(1)}
+      50%{transform:scale(1.1)}
+    }
+    h1{
+      margin:0;
+      font-size:24px;
+    }
+    p.lead{
+      color:var(--muted);
+      margin-top:8px;
+      font-size:15px;
+    }
+    .letter{
+      margin-top:24px;
+      line-height:1.7;
+      font-size:17px;
+      position:relative;
+      z-index:1;
+    }
+    .letter p{
+      margin-bottom:16px;
+      text-align:justify;
+    }
+    .signature{
+      margin-top:28px;
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+      position:relative;
+      z-index:1;
+    }
+    .from{
+      font-style:italic;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .sparkle{
+      position:absolute;
+      width:8px;
+      height:8px;
+      background:#fff;
+      border-radius:50%;
+      opacity:0.7;
+      animation:spark 3s infinite ease-in-out;
+    }
+    @keyframes spark{
+      0%,100%{transform:translateY(0) scale(1);opacity:0.7}
+      50%{transform:translateY(-10px) scale(1.3);opacity:1}
+    }
+  </style>
+</head>
+<body>
+  <article class="card" role="article" aria-label="Love letter">
+    <div class="sparkle" style="top:15%;left:20%;animation-delay:0.2s"></div>
+    <div class="sparkle" style="top:30%;right:25%;animation-delay:1s"></div>
+    <div class="sparkle" style="bottom:20%;left:40%;animation-delay:1.8s"></div>
+    <div class="sparkle" style="bottom:15%;right:15%;animation-delay:2.4s"></div><header>
+  <div class="heart">❤</div>
+  <div>
+    <h1>For Cielo</h1>
+    <p class="lead">Something I  for a good amount of time:))))).</p>
+  </div>
+</header>
+
+<section class="letter">
+  <p>The times we have spent has been super great and wonderful, I enjoyed every single millisecond of it. I love every part of our discussion even when sometimes wala na talaga tayong ma topic but those times are still wonderful.</p>
+
+  <p>Everything about you made me a better person because to be honest, I don't think I deserve to have somebody as beautiful, caring, lovable, funny, smart, etc etc. I just don't think I deserve you. But that's what's driven me to do better on myself. I grew so much without even knowing it, because time passes so fast whenever I'm with you.</p>
+
+  <p>Because of you I felt like I'm not a coward and I'm worth it, I even learned to love myself because of you. Because of you, my life got it's colors back and i don't wanna lose it again. I wanna ask again, I wanna court you cielo. I wanna show you that I deserve you and I wanna show you how I will give you love if you ever wanna be mine. Will you accept?</p>
+</section>
+
+<div class="signature">
+  <div class="from">From,<br>— Holaan mu:)</div>
+</div>
+
+  </article>
+</body>
+</html>
